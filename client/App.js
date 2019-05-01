@@ -34,26 +34,6 @@ export default class App extends Component {
               Menu Tres
               </button>
           </Link>
-
-          <Link to='/menu_one' style={{ textDecoration: 'none' }} >
-              <button class="massive ui orange button">
-              Menu Cuatro
-              </button>
-          </Link>
-
-          <Link to='/menu_two' style={{ textDecoration: 'none' }} >
-              <button class="massive ui purple button">
-              Menu Cinco
-              </button>
-          </Link>
-
-
-          <Link to='/menu_three' style={{ textDecoration: 'none' }} >
-              <button class="massive ui red button">
-              Menu Seis
-              </button>
-          </Link>
-
             
           </Button.Group>
 

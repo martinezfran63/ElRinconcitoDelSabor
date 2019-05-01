@@ -15,7 +15,7 @@ export default class Menu_One extends Component {
                                 <tr>
                                     <td></td>
                                     <th>
-                                    <div class="massive ui red horizontal label">Frutas</div>
+                                    <div class="massive ui red horizontal label">Frutas Preparadas</div>
                                     </th>
                                     <td></td>
                                 </tr>
@@ -68,6 +68,7 @@ export default class Menu_One extends Component {
                                     <td>Fresas Cubiertas en Chocolate
                                     </td>
                                     <td>$5.40</td>
+
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -248,12 +249,14 @@ export default class Menu_One extends Component {
                                 </td>
                                 <td>$5.40</td>
                             </tr>
+
+
                             </table>
-                            
 
                             </div>
+                                 
                         </div>        
-                                           
+                        
                         </body>
                         
         )

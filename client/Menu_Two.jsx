@@ -9,11 +9,11 @@ export default class Menu_Two extends Component {
             <body class="Everything">
 
                 <div class="split left">
-                <ReactPlayer url='amazing contraption.mp4' playing id="bgvid" width="110%" height="110%"/>
+                <ReactPlayer url='nieve.mp4' playing id="bgvid" width="110%" height="110%" loop="true"/>
                 </div>
 
                 <div class="split right">
-                <ReactPlayer url='amazing contraption.mp4' playing id="bgvid" width="110%" height="110%"/>
+                <ReactPlayer url='paleta_montada.mp4' playing id="bgvid" width="110%" height="110%" loop="true"/>
                 </div>
 
 

@@ -11,7 +11,6 @@ export default class Menu_Three extends Component {
                          <div class="ui two column grid">
                             <div class="eigth wide column">
                             <table id = "menu">
-
                                     <tr>
                                         <td></td>
                                         <th>
@@ -27,15 +26,6 @@ export default class Menu_Three extends Component {
                                             </span>
                                         </td>
                                         <td>$6.00</td>
-                                        <td></td>
-                                        <td>Papas Nacho
-                                            <span> <br/>
-                                            Papas caseras, queso, jitomate, crema y salsa especial
-                                        </span>
-                                        </td>
-                                        <td>$5.00</td>
-                                        <td></td>
-                                        
                                     </tr>
                                     <tr>
                                         <td></td>
@@ -45,12 +35,6 @@ export default class Menu_Three extends Component {
                                         </span>
                                         </td>
                                         <td>$5.49</td>
-                                        <td></td>
-                                        <td>Chilindrina
-                                        <span> <br/> Cueritos con repollo, jitomate, aguacate, mayonesa, crema y Sala especial servido con un chicharron
-                                        </span>
-                                        </td>
-                                        <td>$5.40</td>
                                     </tr>
                                     <tr>
                                         <td></td>
@@ -61,36 +45,25 @@ export default class Menu_Three extends Component {
                                         </td>
                                         <td>$6.70</td>
                                     </tr>
-                            </table>
-                            <ReactPlayer url='amazing contraption.mp4' playing />
-                            <img class="image_corners" src="papas-chamoy.jpg"></img>
-     
-                            </div>
-                            
-                            <div class="six wide column">
-                            <img class="image_corners" src="mexican-elotes.jpg"></img>
-                            <table id = "menu">
-                                <tr>
+                                    <tr>
                                     <td></td>
-                                    <th>
-                                    <h2 class="ui red dividing header">Elotes</h2>
-                                    </th>
+                                        <td>Papas Nacho
+                                            <span> <br/>
+                                            Papas caseras, queso, jitomate, crema y salsa especial
+                                        </span>
+                                        </td>
+                                        <td>$5.00</td>
+                                     </tr>
+                                     <tr>
                                     <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Nachos
-                                    <span> <br/>
-                                    Chips, queso y jalape&ntilde;o
-                                    </span>
-                                    </td>
-                                    <td>$6.70</td>
-                                    <td></td>
-                                    <td>Elote en Vaso
-                                    </td>
-                                    <td>$6.00</td>
-                                </tr>
-                                <tr>
+                                        <td>Nachos
+                                            <span> <br/>
+                                             Chips, queso y jalape&ntilde;o
+                                        </span>
+                                        </td>
+                                        <td>$6.70</td>
+                                    </tr>
+                                    <tr>
                                     <td></td>
                                     <td>Dorinachos
                                     <span> <br/>
@@ -98,10 +71,6 @@ export default class Menu_Three extends Component {
                                     </span>
                                     </td>
                                     <td>$5.40</td>
-                                    <td></td>
-                                    <td>Elote Chorreado
-                                    </td>
-                                    <td>$5.49</td>
                                 </tr>
                                 <tr> 
                                     <td></td>
@@ -110,6 +79,46 @@ export default class Menu_Three extends Component {
                                     </span>
                                     </td>
                                     <td>$5.40</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Chilindrina
+                                    <span> <br/> Cueritos con repollo, jitomate, aguacate, mayonesa, crema y Sala especial servido con un chicharron
+                                    </span>
+                                    </td>
+                                    <td>$5.40</td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div class="three wide column">
+
+                            
+                            <ReactPlayer url='nieve.mp4' playing id="bgvid" width="160%" height="160%" loop="true"/>
+
+                            </div>
+                            
+                            <div class="seven wide column">
+                            <table id = "menu">
+                                <tr>
+                                    <td></td>
+                                    <th>
+                                    <h2 class="massive ui orange horizontal label">Elotes</h2>
+                                    </th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Elote en Vaso
+                                    </td>
+                                    <td>$6.00</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Elote Chorreado
+                                    </td>
+                                    <td>$5.49</td>
+                                </tr>
+                                <tr> 
                                     <td></td>
                                     <td>Esquites
                                     </td>
@@ -117,6 +126,7 @@ export default class Menu_Three extends Component {
                                     
                                 </tr>
                                 </table>
+
                             </div>
                          </div>      
                                               
