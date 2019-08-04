@@ -5,6 +5,9 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Postre_Amore from "./images/Postre_Amore.jpg";
+import menu_item_one from "./Data.js";
+
+console.log(menu_item_one);
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,6 +37,28 @@ export default function Menu_Four() {
     <div className={classes.root}>
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
+          <Grid item>
+            <ButtonBase className={classes.image}>
+              <img className={classes.img} alt="complex" src={Postre_Amore} />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1">
+                  Postre Amore
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  Angel cake, crema, yogurt y fruta
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1">$5.40</Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+                <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
               <img className={classes.img} alt="complex" src={Postre_Amore} />

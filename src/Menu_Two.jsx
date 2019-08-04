@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Header, Button, Grid, Image, Embed, GridColumn, Video } from 'semantic-ui-react';
 import ReactPlayer from 'react-player';
 import nieve from "./images/nieve.mp4";
 import paleta_montada from "./images/paleta_montada.mp4";

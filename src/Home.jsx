@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import { Segment } from "semantic-ui-react";
 import styled from "styled-components";
 import rinconcito_background from "./images/rinconcito_background_transparent.jpg";
 import { Link } from "react-router-dom";
@@ -12,7 +10,7 @@ const Content = styled.div`
   height: 2000px;
 `;
 
-class Home extends React.Component {
+class Home extends Component {
   render() {
     return (
       <Content>

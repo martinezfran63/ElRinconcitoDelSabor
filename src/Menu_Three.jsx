@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Header, Button, Grid, Image, Embed } from 'semantic-ui-react';
 import ReactPlayer from 'react-player';
 
 export default class Menu_Three extends Component {
