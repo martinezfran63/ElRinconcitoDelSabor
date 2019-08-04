@@ -9,7 +9,6 @@ import Menu_One from "./Menu_One.jsx";
 import Menu_Two from "./Menu_Two.jsx";
 import Menu_Three from "./Menu_Three.jsx";
 import Lost from "./Lost.jsx";
-import "./App.css";
 
 
 class App extends React.Component {
