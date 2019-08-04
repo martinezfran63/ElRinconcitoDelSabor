@@ -4,6 +4,7 @@ import Home from "./Home.jsx";
 import Menu_One from "./Menu_One.jsx";
 import Menu_Two from "./Menu_Two.jsx";
 import Menu_Three from "./Menu_Three.jsx";
+import Menu_Four from "./Menu_Four.jsx";
 import Lost from "./Lost.jsx";
 
 class App extends React.Component {
@@ -15,6 +16,7 @@ class App extends React.Component {
           <Route path="/menu_one" component={Menu_One} />
           <Route path="/menu_two" component={Menu_Two} />
           <Route path="/menu_three" component={Menu_Three} />
+          <Route path="/menu_four" component={Menu_Four} />
           <Route component={Lost} />
         </Switch>
       </Router>
