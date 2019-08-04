@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from "./Home.jsx";
+import Menu_One from "./Menu_One.jsx";
+import Menu_Two from "./Menu_Two.jsx";
+import Menu_Three from "./Menu_Three.jsx";
+import Lost from "./Lost.jsx";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Switch> 
+          <Route path="/" exact component={Home} />
+          <Route path="/menu_one" component={Menu_One} />
+          <Route path="/menu_two" component={Menu_Two} />
+          <Route path="/menu_three" component={Menu_Three} />
+          <Route component={Lost} />
+        </Switch>
+      </Router>
+
+
+    );
+  }
 }
 
 export default App;
