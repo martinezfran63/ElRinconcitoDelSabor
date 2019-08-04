@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Button, Grid, Image, Embed, Divider } from 'semantic-ui-react';
+import {Image} from 'semantic-ui-react';
 import rinconcito_logo_small from './images/rinconcito_logo_small.png'
 
 export default class Menu_One extends Component {
