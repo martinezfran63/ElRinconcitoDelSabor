@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/js/main.0da058e2.chunk.js",
+    "main.js.map": "/static/js/main.0da058e2.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.8d26120c.chunk.js": "/static/js/2.8d26120c.chunk.js",
+    "static/js/2.8d26120c.chunk.js.map": "/static/js/2.8d26120c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.91e4d3cd0341900a419ae9eedd95b6e8.js": "/precache-manifest.91e4d3cd0341900a419ae9eedd95b6e8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/Postre_Amore.jpg": "/static/media/Postre_Amore.7e7a7ed6.jpg",
+    "static/media/bear_404.jpg": "/static/media/bear_404.ad1a63b9.jpg",
+    "static/media/nieve.mp4": "/static/media/nieve.1ed1ada2.mp4",
+    "static/media/paleta_montada.mp4": "/static/media/paleta_montada.3e79856f.mp4",
+    "static/media/rinconcito_background_transparent.jpg": "/static/media/rinconcito_background_transparent.ca5b1e98.jpg",
+    "static/media/rinconcito_logo_small.png": "/static/media/rinconcito_logo_small.8ba91bca.png"
+  }
+}
