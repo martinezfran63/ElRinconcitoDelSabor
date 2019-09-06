@@ -1,9 +1,16 @@
 import React from 'react';
 import ProductCategoryRow from "./ProductCategoryRow.jsx";
 import ProductRow from "./ProductRow.jsx";
+import styled from 'styled-components'
+
+const Table = styled.table`
+border: 10px solid #e80d13;
+`
+
 
 class ProductTable extends React.Component {
     render() {
+
       const rows = [];
       let lastCategory = null;
       
@@ -26,14 +33,13 @@ class ProductTable extends React.Component {
       });
   
       return (
-        <table>
+        <div>
+        <Table>
           <thead>
-            <tr>
-            <h1>Menu #</h1>
-            </tr>
           </thead>
           <tbody>{rows}</tbody>  
-        </table>
+        </Table>
+        </div>
       );
     }
   }

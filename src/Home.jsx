@@ -4,11 +4,16 @@ import styled from "styled-components";
 import rinconcito_background from "./images/rinconcito_background_transparent.jpg";
 import { Link } from "react-router-dom";
 
+
+
 const Content = styled.div`
   background-image: url(${rinconcito_background});
   width: 100%;
   height: 2000px;
+  background-color: black;
 `;
+
+
 
 class Home extends Component {
   render() {

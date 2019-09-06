@@ -1,13 +1,15 @@
 import React from 'react';
 import ProductTable from "./ProductTable.jsx";
 import Frutas_Preparadas from "./data/Frutas_Preparadas.js";
-import styled from 'styled-components';
+import GlobalStyles from "./GlobalStyles.js";
+import BlackDiv from "./BlackDiv";
 
 
-export default function Menu_Four({className}) {
+export default function Menu_Four() {
   return (
-    <div>
+    <BlackDiv>
+    <GlobalStyles/>  
      <ProductTable products={Frutas_Preparadas}></ProductTable>
-    </div>
+    </BlackDiv>
   );
 }
