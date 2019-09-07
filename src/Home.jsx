@@ -3,7 +3,11 @@ import Button from "@material-ui/core/Button";
 import styled from "styled-components";
 import rinconcito_background from "./images/rinconcito_background_transparent.jpg";
 import { Link } from "react-router-dom";
+import BlackDiv from "./BlackDiv";
 
+const H1 = styled.h1`
+color: white;
+`;
 
 
 const Content = styled.div`
@@ -18,8 +22,8 @@ const Content = styled.div`
 class Home extends Component {
   render() {
     return (
-      <Content>
-        <h1>El Rinconcito Del Sabor</h1>
+      <BlackDiv>
+        <H1>El Rinconcito Del Sabor</H1>
         <Button
           variant="contained"
           color="secondary"
@@ -52,7 +56,7 @@ class Home extends Component {
         >
           Menu Four
         </Button>
-      </Content>
+      </BlackDiv>
     );
   }
 }

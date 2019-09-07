@@ -8,7 +8,7 @@ left: 0;
 top: 0;
 background: rgba(51,51,51,0.7);
 z-index: 10;
-  background-color: black;
+  background-color: white;
 `;
 
 export default BlackDiv;

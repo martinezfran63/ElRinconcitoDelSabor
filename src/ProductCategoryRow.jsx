@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 
   const TRE = styled.tr`
-  color: yellow;
+  color: black;
   font-size: 35px;
   `
 
