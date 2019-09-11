@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-import {Image} from 'semantic-ui-react';
 import rinconcito_logo_small from './images/rinconcito_logo_small.png'
   const Td = styled.td`
   color: #e80d13;
@@ -28,7 +27,7 @@ class ProductRow extends React.Component {
 
     return (
       <tr>
-        <td33>{<Image src={rinconcito_logo_small}/>}</td33>
+
         <Td>{name}</Td>
         <Td2>{product.ingredients}</Td2>
         <td>{product.price}</td>

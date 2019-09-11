@@ -56,6 +56,30 @@ class Home extends Component {
         >
           Menu Four
         </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          component={Link}
+          to="/menu_five"
+        >
+          Menu Five
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          component={Link}
+          to="/menu_six"
+        >
+          Menu Six
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          component={Link}
+          to="/menu_seven"
+        >
+          Menu 7
+        </Button>
       </BlackDiv>
     );
   }

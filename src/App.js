@@ -5,7 +5,11 @@ import Menu_One from "./Menu_One.jsx";
 import Menu_Two from "./Menu_Two.jsx";
 import Menu_Three from "./Menu_Three.jsx";
 import Menu_Four from "./Menu_Four.jsx";
+import Menu_Five from "./Menu_Five.jsx";
+import Menu_Six from "./Menu_Six.jsx";
+import Menu_Seven from "./Menu_Seven.jsx";
 import Lost from "./Lost.jsx";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 class App extends React.Component {
   render() {
@@ -17,6 +21,9 @@ class App extends React.Component {
           <Route path="/menu_two" component={Menu_Two} />
           <Route path="/menu_three" component={Menu_Three} />
           <Route path="/menu_four" component={Menu_Four} />
+          <Route path="/menu_five" component={Menu_Five} />
+          <Route path="/menu_six" component={Menu_Six} />
+          <Route path="/menu_seven" component={Menu_Seven} />
           <Route component={Lost} />
         </Switch>
       </Router>

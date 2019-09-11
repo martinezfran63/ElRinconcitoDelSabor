@@ -5,16 +5,28 @@ import Frutas_Preparadas from "./data/Frutas_Preparadas.js";
 import Bebidas from "./data/Bebidas.js";
 import Nieves from "./data/Nieves.js";
 import GlobalStyles from "./GlobalStyles.js";
-import BlackDiv from "./BlackDiv";
-import { Image } from 'semantic-ui-react'
+
+import styled from 'styled-components'
+import backgroundimage from './images/rinconcito_background_mixed.png'
+
+const BackgroundDiv = styled.div`
+position: fixed;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: rgba(51,51,51,0.7);
+z-index: 10;
+background:url(${backgroundimage});
+background-color: pink;
+`
 
 export default class Menu_One extends Component {
     render(){
-        return( <BlackDiv>
+        return( <BackgroundDiv>
                     <body class="Everything">
                         <div class= "right_logo">
-                            <Image src={rinconcito_logo_small}/>
-\
+
                         </div>
 
                         <div>
@@ -25,7 +37,7 @@ export default class Menu_One extends Component {
                         </div>
                         
                         </body>
-                    </BlackDiv>
+                    </BackgroundDiv>
         )
     }
 

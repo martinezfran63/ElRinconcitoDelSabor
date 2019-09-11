@@ -5,5 +5,5 @@ const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Hepta+Slab');
     font-family: 'Notable', sans-serif;
   }
-  `
-  export default GlobalStyles;
+  `;
+export default GlobalStyles;

@@ -4,15 +4,16 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.4.1",
+    "material-ui-icons": "^1.0.0-beta.36",
     "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-images": "^1.0.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactjs-videobg": "^1.2.3",
     "redux": "^4.0.4",
-    "semantic-ui": "^2.4.2",
-    "semantic-ui-react": "^0.87.3",
     "styled-components": "^4.3.2"
   },
   "scripts": {
