@@ -4,7 +4,7 @@ import ProductRow from "./ProductRow.jsx";
 import styled from 'styled-components'
 
 const Table = styled.table`
-border: 10px solid #e80d13;`
+border: 3px solid black;`
 
 
 class ProductTable extends React.Component {

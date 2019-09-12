@@ -1,157 +1,124 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import three from './images/three.JPG'
-import Typography from "@material-ui/core/Typography";
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+import React from "react";
+import Gallery from "react-photo-gallery";
+import fresasconcrema from './images/fresasconcrema.jpg'
+import bananasplit from './images/bananasplit.jpg'
+import styled from 'styled-components'
+import raspados from './images/raspados.jpg'
 
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
+const photos = [
+  {
+    src: bananasplit,
+    width: 4,
+    height: 3
   },
-  gridList: {
-    flexWrap: 'nowrap',
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: 'translateZ(0)',
+  {
+    src: raspados,
+    width: 4,
+    height: 3
   },
-  title: {
-    color: theme.palette.primary.secondary,
+  {
+    src: bananasplit,
+    width: 4,
+    height: 3
   },
-  titleBar: {
-    background:
-      'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+  {
+    src: raspados,
+    width: 4,
+    height: 3
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
+  {
+    src: bananasplit,
+    width: 4,
+    height: 3
   },
-}));
+  {
+    src: raspados,
+    width: 4,
+    height: 3
+  },
+  {
+    src: bananasplit,
+    width: 4,
+    height: 3
+  },
+  {
+    src: raspados,
+    width: 4,
+    height: 3
+  },
+  {
+    src: bananasplit,
+    width: 4,
+    height: 3
+  },
+  {
+    src: raspados,
+    width: 4,
+    height: 3
+  },
+  {
+    src: bananasplit,
+    width: 4,
+    height: 3
+  },
+  {
+    src: raspados,
+    width: 4,
+    height: 3
+  }
+];
 
-const tileData = [
-    {
-      img: three,
-      title: 'Coctel ',
-      author: '10.00',
-    },
-    {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-   {
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },{
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },{
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },{
-     img: three,
-     title: 'Coctel ',
-     author: '10.00',
-   },
-  ];
+const H1 = styled.h1`
+margin-top: 8px;
+margin-bottom: 8px;
+margin-right: 8px;
+margin-left: 8px;
+color: white; 
+font-family: 'Helvetica Neue',
+sans-serif; font-size: 120px;
+font-weight: bold;
+letter-spacing: -1px;
+line-height: 1; 
+text-align: left;
+margin: 10 10 72px;
+`
+const H2 = styled.h2`
+margin-top: 8px;
+margin-bottom: 8px;
+margin-right: 8px;
+margin-left: 8px;
+color: white; 
+font-family: 'Open Sans', sans-serif; 
+font-size: 30px; 
+font-weight: 300;
+line-height: 32px; 
+text-align: left;
+`
 
-export default function SingleLineGridList() {
-  const classes = useStyles();
+const Header = styled.div`
+    //border: 1px solid #000;
+    background-color:#fd02b1;
+    //background-color: #f8f8f8;
+   // background-image: url(${fresasconcrema});
+    width: 2000px;
+    height: 200px;
+`;
 
-  return (
-    <div className={classes.root}>
-
-
-      <AppBar position="static">
-        <Toolbar>
-          <Typography  variant="h5" align="center" className={classes.title}>
-          Frutas Preparadas
-          </Typography>
-
-        </Toolbar>
-      </AppBar>
-
-
-      <GridList className={classes.gridList} cols={6}>
-        {tileData.map(tile => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title,
-                
-              }}
-            />
-            
-          </GridListTile>
-        ))}
-      </GridList>
+export default class Component extends React.Component {
+  render() {
+   return (
+    <div>
+    <Header>
+      <H1>Nieves y Raspados</H1>
+      <H2>Ice Cream & Mexican Snow Cone</H2>
+    </Header>
+    <div >
+    <Gallery margin={3} photos={photos} />
     </div>
-  );
+    </div>       
+    );
+    
+  }
+
 }

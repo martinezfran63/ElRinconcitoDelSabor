@@ -1,137 +1,125 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import escamocha from './images/escamocha_1.jpg'
+import React from "react";
+import Gallery from "react-photo-gallery";
 import fresasconcrema from './images/fresasconcrema.jpg'
-import gazpacho from './images/gazpacho_1.jpg'
+import styled from 'styled-components'
+import mojitos from './images/mojitos.jpg'
+import greentea from './images/greentea.jpg'
 
-
-const useStyles = makeStyles(theme => ({
-  card: {
-    maxWidth: 345,
+const photos = [
+  {
+    src: mojitos,
+    width: 4,
+    height: 3
   },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
+  {
+    src: greentea,
+    width: 4,
+    height: 3
   },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
+  {
+    src: mojitos,
+    width: 4,
+    height: 3
   },
-  expandOpen: {
-    transform: 'rotate(180deg)',
+  {
+    src: greentea,
+    width: 4,
+    height: 3
   },
-  avatar: {
-    backgroundColor: red[500],
+  {
+    src: mojitos,
+    width: 4,
+    height: 3
   },
-  root: {
-    flexGrow: 1,
+  {
+    src: greentea,
+    width: 4,
+    height: 3
   },
-  paper: {
-
+  {
+    src: mojitos,
+    width: 4,
+    height: 3
   },
-}));
+  {
+    src: greentea,
+    width: 4,
+    height: 3
+  },
+  {
+    src: mojitos,
+    width: 4,
+    height: 3
+  },
+  {
+    src: greentea,
+    width: 4,
+    height: 3
+  },
+  {
+    src: mojitos,
+    width: 4,
+    height: 3
+  },
+  {
+    src: greentea,
+    width: 4,
+    height: 3
+  }
+];
 
 
 
+const H1 = styled.h1`
+margin-top: 8px;
+margin-bottom: 8px;
+margin-right: 8px;
+margin-left: 8px;
+color: white; 
+font-family: 'Helvetica Neue',
+sans-serif; font-size: 120px;
+font-weight: bold;
+letter-spacing: -1px;
+line-height: 1; 
+text-align: left;
+margin: 10 10 72px;
+`
+const H2 = styled.h2`
+margin-top: 8px;
+margin-bottom: 8px;
+margin-right: 8px;
+margin-left: 8px;
+color: white; 
+font-family: 'Open Sans', sans-serif; 
+font-size: 30px; 
+font-weight: 300;
+line-height: 32px; 
+text-align: left;
+`
 
-export default function RecipeReviewCard() {
-  const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+const Header = styled.div`
+    //border: 1px solid #000;
+    background-color: orange;
+    //background-color: orange:
+   // background-image: url(${fresasconcrema});
+    width: 2000px;
+    height: 200px;
+`;
 
-  function FormRow() {
-    return (
-    
-      <React.Fragment>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}><Card raised="false" className={classes.card}>
-      <CardMedia
-        className={classes.media}
-        image={fresasconcrema}
-        title="Paella dish"
-      />
-    </Card></Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}><Card raised="true" className={classes.card}>
-      <CardMedia
-        className={classes.media}
-        image={escamocha}
-        title="Paella dish"
-      />
-    </Card></Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}><Card raised="true" className={classes.card}>
-
-      <CardMedia
-        className={classes.media}
-        image={gazpacho}
-        title="Paella dish"
-      />
-    </Card></Paper>
-        </Grid>
-      </React.Fragment>
-
+export default class Component extends React.Component {
+  render() {
+   return (
+    <div>
+    <Header>
+      <H1>Bebidas</H1>
+      <H2>Drinks</H2>
+    </Header>
+    <div >
+    <Gallery margin={3} photos={photos} />
+    </div>
+    </div>       
     );
+    
   }
 
-  return (
-    <div>
-
-<div className={classes.root}>
-      <Grid container spacing={0}>
-
-       <Typography variant="h1" component="h3" gutterBottom="true" color='secondary'>
-        Frutas Preparadas
-      </Typography>
-        <Grid container item xs={12} spacing={0} raised="true" >
-          <FormRow />
-        </Grid>
-        <Grid container item xs={12} spacing={0}>
-          <FormRow />
-        </Grid>
-        <Grid container item xs={12} spacing={2}>
-          <FormRow />
-        </Grid>
-      </Grid>
-    </div>
-
-    <Card raised="true" className={classes.card}>
-      <CardMedia
-        className={classes.media}
-        image={gazpacho}
-        title="Paella dish"
-      />
-    </Card>
-    <Card raised="true" className={classes.card}>
-      <CardMedia
-        className={classes.media}
-        image={gazpacho}
-        title="Paella dish"
-      />
-    </Card>
-    <Card raised="true" className={classes.card}>
-
-      <CardMedia
-        className={classes.media}
-        image={gazpacho}
-        title="Paella dish"
-      />
- 
-    </Card>
-    
-    
-    </div>
-
-  );
-  
 }

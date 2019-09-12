@@ -1,28 +1,19 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
-import rinconcito_background from "./images/rinconcito_background_transparent.jpg";
+import RinconctioBackground from "./RinconctioBackground";
 import { Link } from "react-router-dom";
-import BlackDiv from "./BlackDiv";
+
 
 const H1 = styled.h1`
 color: white;
 `;
 
 
-const Content = styled.div`
-  background-image: url(${rinconcito_background});
-  width: 100%;
-  height: 2000px;
-  background-color: black;
-`;
-
-
-
 class Home extends Component {
   render() {
     return (
-      <BlackDiv>
+      <RinconctioBackground>
         <H1>El Rinconcito Del Sabor</H1>
         <Button
           variant="contained"
@@ -30,7 +21,7 @@ class Home extends Component {
           component={Link}
           to="/menu_one"
         >
-          Menu One
+          Main Menu
         </Button>
         <Button
           variant="contained"
@@ -38,7 +29,7 @@ class Home extends Component {
           component={Link}
           to="/menu_two"
         >
-          Menu Two
+          Video Menu
         </Button>
         <Button
           variant="contained"
@@ -46,7 +37,7 @@ class Home extends Component {
           component={Link}
           to="/menu_three"
         >
-          Menu Three
+          Frutas Preparadas
         </Button>
         <Button
           variant="contained"
@@ -54,7 +45,7 @@ class Home extends Component {
           component={Link}
           to="/menu_four"
         >
-          Menu Four
+          Frutas Preparadas
         </Button>
         <Button
           variant="contained"
@@ -62,7 +53,7 @@ class Home extends Component {
           component={Link}
           to="/menu_five"
         >
-          Menu Five
+          Nieves y Raspados
         </Button>
         <Button
           variant="contained"
@@ -70,7 +61,7 @@ class Home extends Component {
           component={Link}
           to="/menu_six"
         >
-          Menu Six
+          Papas
         </Button>
         <Button
           variant="contained"
@@ -78,9 +69,9 @@ class Home extends Component {
           component={Link}
           to="/menu_seven"
         >
-          Menu 7
+          Bebidas
         </Button>
-      </BlackDiv>
+      </RinconctioBackground>
     );
   }
 }
